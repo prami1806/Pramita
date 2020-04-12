@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<link href='https://fonts.googleapis.com/css?family=Barrio|Lobster' rel='stylesheet'>
+<link href='main.css' rel='stylesheet'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 600px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  background-color: #12343b;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 580px;
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #12343b;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay1 {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay2 {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay2 {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="font-family:'Barrio';color:#e1b382;">Pramita Kastha</h1>
+  <p style="font-size:30px; color:#c89666;font-family:'Lobster';">
+  	"Youth is not an age group; it is a mindset;
+  	 a mindset to try new things, a mindset to continously learn, to fail,
+  	 and to learn again."
+  </p>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color: #2d545e;">
+	<div class="container">
+	  <img src="images/eins.png" alt="My Interests" class="image">
+	  <div class="overlay2"><a href="interests.html"><h2>My Interests</h2></a></div>
+	</div>
+  </div>
+  <div class="column" style="background-color: #2d545e;">
+	<div class="container">
+	  <img src="images/img_avatar.png" alt="Me" class="image">
+	  <div class="overlay1">
+	    <div class="text">
+	    	<h2>About Me</h2>
+			<p>
+				I am a first year undergraduate student of the 
+				Department of Electrical and Electronics Communication
+				Engineering enrolled in its four year B.Tech course.<br><br>
+				I am a physics enthusiast, maths lover, hobbyist coder and 
+				interested in Research as well.
+			</p>
+	    </div>
+	  </div>
+	</div>
+  </div>
+  <div class="column" style="background-color: #2d545e;">
+	<div class="container">
+	  <img src="images/achiv.png" alt="Achievements" class="image">
+	  <div class="overlay2"><a href="acads.html"><h2>Academics and Achievements</h2></a></div>
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+  <h1 style="color:white;"><a href="contact.html">CONTACT ME</a></h1>
+</div>
+
+</body>
+</html>

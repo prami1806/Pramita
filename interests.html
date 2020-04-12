@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>Interests</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Barrio|Lobster' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='main.css' rel='stylesheet'>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  -ms-flex: 25%; 
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+
+<a href="index.html" style="text-decoration:none;"><button class="button"><i class="fa fa-fw fa-home"></i> Goto Home</button></a>
+
+<div class="header">
+	<h1 style="font-family:'Barrio';color:#e1b382;">My Interests</h1>
+	 <p style="font-size:30px; color:#c89666;font-family:'Lobster';">
+	  	I act, I sketch,I write, I click photographs(photography?) and yes, I code. 
+  	</p>
+</div>
+
+
+<div class="row"> 
+  <div class="column">
+    <img src="images/1.JPG" style="width:100%">
+    <img src="images/2.png" style="width:100%">
+    <img src="images/3.png" style="width:100%">
+    <img src="images/4.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/eins.png" style="width:100%">
+    <img src="images/9.png" style="width:100%">
+    <img src="images/10.png" style="width:100%">
+    <img src="images/11.png" style="width:100%">
+    <img src="images/13.png" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/14.png" style="width:100%">
+    <img src="images/15.png" style="width:100%">
+    <img src="images/5.jpg" style="width:100%">
+    <img src="images/16.png" style="width:100%">
+    <img src="images/7.png" style="width:100%">
+    <img src="images/w.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/12.png" style="width:100%">
+    <img src="images/17.png" style="width:100%">
+	<img src="images/18.png" style="width:100%">
+    <img src="images/19.jpg" style="width:100%">
+    <img src="images/6.png" style="width:100%">
+  </div>
+</div>
+
+<a href="#" style="text-decoration:none;"><button class="button">Goto Top</button></a>
+</body>
+</html>
